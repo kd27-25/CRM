@@ -2,5 +2,7 @@
   "name": "AURA CRM - Modern Calling & Sales Management SaaS",
   "description": "Enterprise-ready CRM SaaS featuring calling-purpose agent dialers, call quality audits (QA), role-based access control (Administration, Admin, Manager, Team Lead, Audit QA, Agent), and Aura vs Aura+ subscription tiers. Developed by TEAM KRK (KT, RDX & KD).",
   "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }
