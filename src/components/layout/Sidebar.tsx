@@ -77,6 +77,14 @@ export const Sidebar: React.FC = () => {
       roles: ['administration', 'admin'],
     },
     {
+      id: 'about_us',
+      label: 'About Team KRK',
+      icon: Users,
+      badge: 'KRK',
+      badgeColor: 'bg-red-100 text-red-700 dark:bg-red-950 dark:text-red-300',
+      roles: ['administration', 'admin', 'manager', 'team_lead', 'audit_qa', 'agent'],
+    },
+    {
       id: 'deployment',
       label: 'GitHub & Deploy Docs',
       icon: Terminal,
@@ -171,13 +179,30 @@ export const Sidebar: React.FC = () => {
         </div>
       </div>
 
-      {/* Footer Info Box: Team KRK */}
+      {/* Footer Info Box: Team KRK with Photo Thumbnail */}
       <div className="p-4 border-t border-neutral-200 dark:border-neutral-800 bg-neutral-50/50 dark:bg-neutral-900/30 space-y-3">
-        <div className="flex items-center justify-between text-[11px] text-neutral-500 dark:text-neutral-400">
-          <span>Engineered by</span>
-          <span className="font-semibold text-neutral-800 dark:text-neutral-200">TEAM KRK</span>
-        </div>
-        
+        <button
+          onClick={() => setActiveTab('about_us')}
+          className="w-full text-left p-2 rounded-xl border border-red-900/30 bg-neutral-950/60 hover:bg-neutral-900/80 transition-all flex items-center gap-2.5 group cursor-pointer"
+        >
+          <img
+            src="/images/team-krk.jpeg"
+            alt="TEAM KRK Thumbnail"
+            className="w-9 h-9 rounded-lg object-cover border border-red-800/40 shrink-0"
+          />
+          <div className="overflow-hidden">
+            <div className="flex items-center gap-1">
+              <span className="text-[11px] font-bold text-white group-hover:text-red-400 transition-colors">
+                TEAM KRK
+              </span>
+              <span className="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse" />
+            </div>
+            <p className="text-[10px] text-neutral-400 truncate">
+              Kartikey · Raj · KD
+            </p>
+          </div>
+        </button>
+
         <div className="text-[10px] text-neutral-400 dark:text-neutral-500 flex items-center justify-between">
           <span>Target Domain</span>
           <span className="font-mono text-neutral-600 dark:text-neutral-300">kd.pvt.ltd</span>

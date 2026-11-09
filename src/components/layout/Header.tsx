@@ -72,7 +72,7 @@ export const Header: React.FC = () => {
               <a href="#features" className="hover:text-neutral-900 dark:hover:text-white transition-colors whitespace-nowrap shrink-0">Features</a>
               <a href="#plans" className="hover:text-neutral-900 dark:hover:text-white transition-colors whitespace-nowrap shrink-0">Subscription Plans</a>
               <a href="#roles" className="hover:text-neutral-900 dark:hover:text-white transition-colors whitespace-nowrap shrink-0">Role Hierarchy</a>
-              <a href="#team-krk" className="hover:text-neutral-900 dark:hover:text-white transition-colors whitespace-nowrap shrink-0">Team KRK</a>
+              <a href="#about-us" className="hover:text-red-600 dark:hover:text-red-400 transition-colors whitespace-nowrap shrink-0">About Team KRK</a>
               <a href="#deployment" className="hover:text-neutral-900 dark:hover:text-white transition-colors whitespace-nowrap shrink-0">Architecture & Deploy</a>
             </>
           ) : (

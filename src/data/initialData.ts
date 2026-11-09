@@ -7,17 +7,19 @@ import {
   SubscriptionPlan 
 } from '../types/crm';
 
+export const TEAM_KRK_PHOTO_URL = '/images/team-krk.jpeg';
+
 export const TEAM_KRK_MEMBERS: TeamKRKMember[] = [
   {
-    name: 'KT',
+    name: 'Kartikey',
     handle: 'KT',
-    role: 'Lead System Architect & Core Backend Engineer',
+    role: 'Lead System Architect & Core Telephony Engineer',
     contact: '6265151482',
     email: 'kartikepand98@gmail.com',
     bio: 'Specialist in distributed telephony microservices, database normalization, and high-concurrency telephony pipeline architecture.',
   },
   {
-    name: 'RDX',
+    name: 'Raj',
     handle: 'RDX',
     role: 'Product Strategy & Security Infrastructure Lead',
     contact: '+91 89825 68249',

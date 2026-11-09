@@ -9,6 +9,7 @@ import { TeamManagementView } from './TeamManagementView';
 import { SubscriptionBillingView } from './SubscriptionBillingView';
 import { DeploymentGuideView } from './DeploymentGuideView';
 import { SettingsView } from './SettingsView';
+import { AboutUsSection } from '../about/AboutUsSection';
 import { PhoneCall, ArrowUpRight } from 'lucide-react';
 
 export const CRMWorkspace: React.FC = () => {
@@ -28,6 +29,8 @@ export const CRMWorkspace: React.FC = () => {
         return <TeamManagementView />;
       case 'billing':
         return <SubscriptionBillingView />;
+      case 'about_us':
+        return <AboutUsSection standalone={true} />;
       case 'deployment':
         return <DeploymentGuideView />;
       case 'settings':
